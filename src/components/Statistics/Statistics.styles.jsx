@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Stat = styled.h1``;
+
 
 export const StatList = styled.ul``;
 
