@@ -6,15 +6,15 @@ function Section({ title, children }) {
     <div>
       <h1>
         {title}
+       </h1> 
         {children}
-      </h1>
     </div>
   );
 }
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired
+  children: PropTypes.element.isRequired
 };
 
 export default Section;
