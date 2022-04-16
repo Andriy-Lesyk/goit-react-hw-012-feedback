@@ -33,15 +33,17 @@ export default class App extends Component {
             handleFeedback={this.handleIncrement}
             options={this.state}
           />
-          {good !== 0 || bad !== 0 || neutral !== 0 ?
-            (<Statistics
+          {good !== 0 || bad !== 0 || neutral !== 0 ? (
+            <Statistics
               good={good}
               neutral={neutral}
               bad={bad}
               total={this.handleIncrementTotal()}
               positivePercentage={this.handleIncrementPositive()}
-            />) :
-            <Notification message='There is no feedback' />}
+            />
+          ) : (
+            <Notification message="There is no feedback" />
+          )}
         </Section>
       </div>
     );
